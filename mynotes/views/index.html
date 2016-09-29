@@ -1,0 +1,48 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="author" content="蔡景锋">
+    <title>备忘录</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/lib/zy-layer/css/alert.css">
+    <link rel="stylesheet" href="/lib/zy-layer/css/confirm.css">
+    <link rel="stylesheet" href="/lib/zy-layer/css/prompt.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        文件夹
+    </header>
+    <main>
+        {{each folders as folder}}
+        <div class="box">
+            {{folder.folderName}}
+
+
+            <div class="right">
+                <span>{{folder.fileCount}}</span>
+                <img src="images/arrow.jpg" alt="arrow">
+            </div>
+            <div class="clear"></div>
+
+        </div>
+        {{/each}}
+
+    </main>
+    <footer>
+        <span id="new">新建文件夹</span>
+    </footer>
+    <script src="/lib/jquery.min.js"></script>
+    <script src="/lib/zy-layer/js/alert.js"></script>
+    <script src="/lib/zy-layer/js/confirm.js"></script>
+    <script src="/lib/zy-layer/js/prompt.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+
+</html>
